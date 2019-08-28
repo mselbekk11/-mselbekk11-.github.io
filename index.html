@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109469051-1"></script> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109469051-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<script>
+    
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+    
+
+ 
+    
+      $(document).ready(function(){
+      $('.carousel').carousel({dist:0,shift:0,padding:20,});
+          
+     window.setInterval(function(){$('.carousel').carousel('next')},3500)     
+          
+    });  
+    
+ 
+</script>
+    
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    
+    
+  <title>Morgan Selbekk</title>
+    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="http://www.morganselbekk.com/img/dm-logo.png" type="image/x-icon" />
+  <!--<link type="text/css" rel="stylesheet" href="component.css">-->
+  <link type="text/css" rel="stylesheet" href="portfolio.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Asap|Boogaloo|Magra|Overlock|Rambla|Source+Sans+Pro|Viga" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One|Yeseva+One" rel="stylesheet">
+
+
+
+    
+</head>
+    
+<body>
+    
+<!-- NAV DESKTOP---->  
+    
+  <nav class="top-bar" role="navigation">
+    <div class="nav-wrapper container" id="menu-center">
+        
+    <div class="tablet-logo"><a href="#" class="plain"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/1_enrfk1.png" alt="img04"></a></div>    
+        
+    <ul class="right hide-on-med-and-down">   
+    
+        <!-- ICON ONE -->
+        <li class="logo-m"><a href="#" class="plain"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/1_enrfk1.png" alt="img04"></a></li>
+        <!-- ICON ONE --> 
+
+        <li class="normal"><a class="active" href="#index-banner">Home</a></li>
+        <!-- <li class="normal"><a href="#projects">Projects</a></li> -->
+        <li class="normal"><a href="#about">About</a></li>
+        <!-- <li class="normal"><a href="http://www.mselbekk.com/test.html">test</a></li> -->
+ 
+    </ul>
+    
+        
+        
+    <div class="nav-footer">
+        
+          
+
+
+        <!-- ICON THREE --> 
+        <a href="https://www.linkedin.com/in/morgan-christian-selbekk-a0617738/" target="blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="17px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve"><g>
+        <path id="iconone" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707   c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21   v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824   C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463   c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z    M5.477,420.56h92.184v-277.32H5.477V420.56z" fill="#FFFFFF"/>
+        </g></svg></a>
+        <!-- ICON THREE -->  
+          
+    </div> 
+
+      <ul id="nav-mobile" class="side-nav">
+        <!--<li><a href="#">Navbar Link</a></li>-->
+        <li class="mobile"><a class="active" href="#index-banner">Home</a></li>
+        <!-- <li class="mobile"><a href="#projects">Projects</a></li> -->
+        <li class="mobile"><a href="#about">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<!-- NAV DESKTOP ---->  
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+<!-- HERO ---->    
+  <div class="section no-pad-bot" id="index-banner">
+      
+    
+      
+    <div class="container-blue">
+        
+        <!--<div class="beeem" style="width:100%;height:0;opacity: .1;"><iframe src="https://giphy.com/embed/26tn33aiTi1jkl6H6" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>-->
+        
+        <div class="row hero"> 
+            <div class="col s12 content">
+                   <div class="col s6 content">
+                        <div class="intro-one">
+                            
+                            <h2 class="header name">Morgan Selbekk</h2>
+                            <h3>Customer Success <span>/</span> Tech Support <span>/</span> Web Designer & Developer</h3>
+                            <div class="underline"></div>
+                             <ul>
+                            <!--<li>Front end coder</li>
+                            <li>Design background</li>
+                            <li>ecommerce specialist</li>
+                            <li>customer success guru</li>
+                            <li>developer at heart with a sales persona</li>-->
+                            
+                            
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="col s6 content">
+                        <div class="intro-two">
+                        
+                           <!--<object data="http://www.youtube.com/embed/FvOZsJVpYZg?autoplay=1"
+   width="460" height="250" ></object>-->
+                            
+                            
+                            
+                        
+                      <!--<img src="img/shade.png">
+                    <img src="img/boom.jpg" class="hidden" style="display: none;">-->
+                            <!--<p>I currently work for the webflow of ecommerce (Zmags)vI love my current job. But I also have a strong desire to work with you guys.</p>-->
+                            
+                            
+                            
+                            
+  <!--<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="img/hero-web-small-5.png"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>-->
+      
+    
+                            
+                        </div>
+                    </div>
+             </div>
+        </div>
+    </div>
+      
+      
+</div>        
+
+    
+
+
+<!-- HERO ----> 
+    
+
+    
+    
+
+ 
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    <!-- ABOUT ----> 
+    
+    <div class="section about" id="about">    
+        <div class="container-about">
+        
+        <div class="row bottom"> 
+           
+            <div class="col s4 content">
+            <!-- <div class="about-title">
+            <h2>Contact</h2>
+            <div class="underline"></div>   
+            </div> -->
+            <div class="about-one">
+            <div class="profile">
+            <img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474082/mott-avatar-2_s8hmig.png"> 
+            </div>
+            <!-- <div class="contact">
+            <ul>
+            <li><i class="material-icons">email</i><p>dmo@zmags.com</p></li>
+            <li><i class="material-icons">phone_iphone</i> <p>***********</p></li>
+            <li><i class="material-icons">location_on</i> <p>Battersea, London</p></li>
+            </ul>
+            </div> -->
+            </div>
+            </div>
+           
+            <div class="col s7 offset-s1 content center">
+            <div class="about-two">
+                
+                
+                <div class="box-two">
+                <!-- <h2>Experience</h2>
+                <div class="underline"></div> -->
+                <div class="experience">
+                    
+                
+                    
+                <table class="tg">
+                    <tr class="boom-two" style="background: #f5f7f9;">
+                        <th class="tg-yw4l one">2019 - Present</th>
+                        <th class="tg-yw4l dos">Solutions Engineer</th>
+                        <th class="tg-yw4l three"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/2_kqrsdy.png"/>Zmags</th>
+                      </tr>
+                    <tr class="boom-two" style="background: #fff;">
+                        <th class="tg-yw4l one">2019</th>
+                        <th class="tg-yw4l dos">Implementation Manager</th>
+                        <th class="tg-yw4l three"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/2_kqrsdy.png"/>Zmags</th>
+                      </tr>
+                    <tr class="boom-two" style="background: #f5f7f9;">
+                    <th class="tg-yw4l one">2018</th>
+                    <th class="tg-yw4l dos">Customer Success Manager</th>
+                    <th class="tg-yw4l three"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/2_kqrsdy.png"/>Zmags</th>
+                  </tr>
+                  <tr class="boom-two">
+                    <th class="tg-yw4l one">2016-2017</th>
+                    <th class="tg-yw4l dos">Web Designer & Developer</th>
+                    <th class="tg-yw4l three"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/3_sgxzrq.png"/>Dixons Carphone</th>
+                  </tr>
+                  <tr class="boom-three">
+                    <td class="tg-yw4l four">2015 - Present</td>
+                    <td class="tg-yw4l five">Freelance Web Designer</td>
+                    <td class="tg-yw4l six"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474505/77_tgn4z9.png"/>morganselbekk.com</td>
+                  </tr>
+                  <tr class="boom-four">
+                    <td class="tg-yw4l seven">2011-2014</td>
+                    <td class="tg-yw4l eight">BA Media Communications</td>
+                    <td class="tg-yw4l nine"><img src="https://res.cloudinary.com/mselbekk-com/image/upload/v1559474351/5_sfigtw.png"/>University of the Arts, London</td>
+                  </tr>
+                </table> 
+
+              </div>
+
+
+              <div class="experience bottom">
+
+
+                <table class="tg">
+                    <tr class="boom-two" style="background: #f5f7f9;">
+                        <th class="tg-yw4l one">Phone</th>
+                        <th class="tg-yw4l dos"><a href="tel:07877293319">07877293319</a></th>
+                        <th class="tg-yw4l three"></th>
+                      </tr>
+                  <tr class="boom-two" style="background: #fff;">
+                      <th class="tg-yw4l one">Email</th>
+                      <th class="tg-yw4l dos"><a href="mailto:mselbekk11@gmail.com">mselbekk11@gmail.com</a></th>
+                      <th class="tg-yw4l three"></th>
+                    </tr>
+                    <!-- <tr class="boom-two" style="background: #f5f7f9;">
+                        <th class="tg-yw4l one">Address</th>
+                        <th class="tg-yw4l dos">Battersea, London</th>
+                        <th class="tg-yw4l three"></th>
+                      </tr> -->
+                  
+              </table> 
+
+            </div>
+
+                    
+                <div class="download"><a class="waves-effect waves-light btn" href="CV/MS-CV.pdf" target="_blank" title="CV">Download CV 
+                    
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                  <g><g><path d="M414.317,213.105l-42.422-42.422c-5.859-5.859-15.352-5.859-21.211,0L300,221.367V15c0-8.291-6.709-15-15-15h-60    c-8.291,0-15,6.709-15,15v206.367l-50.683-50.684c-5.859-5.859-15.352-5.859-21.211,0l-42.422,42.422    c-5.859,5.859-5.859,15.352,0,21.211l148.711,148.711c5.859,5.86,15.351,5.86,21.21,0l148.712-148.711    C420.176,228.457,420.176,218.964,414.317,213.105z" fill="#FFFFFF"/></g></g><g><g><path d="M497,332h-60c-8.291,0-15,6.709-15,15v75H90v-75c0-8.291-6.709-15-15-15H15c-8.291,0-15,6.709-15,15v120    c0,24.814,20.186,45,45,45h422c24.814,0,45-20.186,45-45V347C512,338.709,505.291,332,497,332z" fill="#FFFFFF"/></g></g></svg>    
+                      
+                  </a></div>
+
+
+                
+                    
+                
+                    
+                    
+                </div>
+                
+                <!-- <div class="box-three">
+                    
+                <h2>Skills</h2>
+                <div class="underline"></div>
+                    
+                <div class="skills">  
+                    
+                    <div class="icon-one">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 474.557 474.557" style="enable-background:new 0 0 474.557 474.557;" xml:space="preserve" width="512px" height="512px">
+                    <g><g><g>
+                    <path d="M0,2.028V472.53h474.557V2.028H0z M435.471,433.465c-33.996,0-362.303,0-396.363,0c0-33.996,0-358.377,0-392.329     c33.996,0,362.346,0,396.363,0C435.471,75.088,435.471,399.469,435.471,433.465z" fill="#c0a062"></path>
+                    <path d="M124.916,273.625c1.294,4.53,2.006,14.409,2.006,29.574c0,13.007,0.669,22.563,2.071,28.624     c1.402,6.018,4.142,11.174,8.24,15.272c4.077,4.098,9.081,7.075,15.013,8.866c5.954,1.769,14.496,2.653,25.605,2.653h6.579     v-29.66c-8.866,0-14.625-0.561-17.3-1.682c-2.653-1.143-4.638-2.718-5.954-4.897c-1.294-2.157-1.941-5.91-1.941-11.325     c0-3.84-0.345-12.576-0.992-26.295c-0.496-8.973-1.575-16.135-3.236-21.484c-1.639-5.393-4.012-9.944-7.118-13.697     c-3.085-3.775-7.054-7.032-11.907-9.815c5.501-3.581,9.577-6.967,12.274-10.311c2.675-3.257,4.875-7.442,6.601-12.511     c1.704-5.069,2.783-11.691,3.214-19.845c0.733-14.452,1.143-24.289,1.143-29.487c0-5.091,0.626-8.715,1.855-10.807     c1.251-2.071,3.149-3.645,5.738-4.702c2.588-1.014,8.477-1.532,17.623-1.532v-29.509h-6.579c-10.807,0-18.723,0.755-23.728,2.243     c-7.42,2.222-13.072,5.242-16.976,9.06c-3.883,3.84-6.558,8.909-8.046,15.229c-1.467,6.277-2.179,17.429-2.179,33.348     c0,9.858-0.367,16.674-1.035,20.643c-0.82,5.263-2.351,9.642-4.551,13.158c-2.243,3.516-4.832,5.997-7.916,7.485     c-3.02,1.445-7.528,2.373-13.568,2.739v29.681c7.593,0.388,13.201,2.028,16.89,4.897     C120.387,262.344,123.126,267.025,124.916,273.625z" fill="#c0a062"></path>
+                    <path d="M212.084,331.392l6.73,14.366c7.42-2.653,13.568-6.32,18.4-10.915c4.832-4.595,8.089-9.815,9.815-15.617     c1.747-5.846,2.61-13.805,2.61-23.814v-24.785h-34.751v34.729h16.761c-0.129,6.838-1.726,12.295-4.659,16.48     C224.034,325.87,219.051,329.105,212.084,331.392z" fill="#c0a062"></path>
+                    <rect x="214.888" y="174.012" width="34.751" height="34.772" fill="#c0a062"></rect>
+                    <path d="M311.18,356.349c7.464-2.243,13.201-5.22,17.106-9.081c3.883-3.818,6.536-8.93,7.938-15.272     c1.402-6.363,2.179-17.515,2.179-33.499c0-9.75,0.367-16.609,1.014-20.557c0.884-5.263,2.438-9.642,4.659-13.137     c2.179-3.494,4.767-6.018,7.809-7.485c3.042-1.467,7.55-2.373,13.568-2.696h-0.043v-29.66c-7.615-0.453-13.18-2.071-16.933-4.918     c-3.667-2.826-6.407-7.571-8.262-14.107c-1.251-4.616-1.855-14.452-1.855-29.509c0-13.029-0.712-22.541-2.157-28.56     c-1.424-6.105-4.163-11.195-8.197-15.358c-4.055-4.142-9.038-7.054-14.97-8.801c-5.975-1.726-14.517-2.61-25.626-2.61h-6.557     v29.466c9.34,0,15.337,0.561,17.99,1.683c2.696,1.1,4.551,2.675,5.565,4.724c1.057,2.049,1.553,6.169,1.639,12.36     c0.453,19.608,1.186,32.291,2.071,38.072c1.381,8.369,4.055,15.294,7.873,20.686c2.826,3.84,7.248,7.658,13.352,11.627     c-4.702,2.696-8.52,5.846-11.54,9.448c-3.041,3.559-5.436,7.96-7.205,13.072c-1.812,5.177-2.955,12.08-3.322,20.6     c-0.669,14.172-1.1,23.814-1.1,28.819c-0.086,5.026-0.669,8.585-1.984,10.699c-1.316,2.136-3.279,3.71-5.975,4.853     c-2.718,1.122-8.52,1.639-17.364,1.639v29.66h6.622C298.216,358.571,306.154,357.795,311.18,356.349z" fill="#c0a062"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    <p>Development - <span>HTML5 &amp; CSS3 | Learning Javascript</span></p>
+                    </div>
+                    
+                    
+                    <div class="icon-two">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                    <g><g>
+                    <path d="M494.479,123.595C505.778,112.297,512,97.229,512,81.166c0-16.063-6.222-31.132-17.521-42.429L473.264,17.52    C461.967,6.222,446.898,0,430.836,0c-16.064,0-31.131,6.222-42.43,17.52L255.979,149.946L106.185,0.15L0.109,106.226    l149.796,149.795L35.358,370.568L0,512l141.433-35.359l114.546-114.546l149.795,149.796l106.073-106.074L362.054,256.021    L494.479,123.595z M409.621,38.733c5.63-5.629,13.165-8.731,21.215-8.731c8.049,0,15.583,3.101,21.215,8.733l21.215,21.215    c5.631,5.631,8.733,13.166,8.733,21.215s-3.102,15.583-8.733,21.215l-10.607,10.607l-63.645-63.645L409.621,38.733z     M377.798,70.557l63.645,63.645l-21.216,21.216l-63.645-63.645L377.798,70.557z M42.539,106.226l63.645-63.645l28.717,28.717    l-21.215,21.215l21.215,21.215l21.215-21.215l28.717,28.717l-21.215,21.215l21.215,21.215l21.215-21.215l28.717,28.717    l-63.645,63.645L42.539,106.226z M335.368,112.988l21.216,21.215L91.333,399.452l-21.215-21.215L335.368,112.988z M41.234,470.766    l15.797-63.187l47.39,47.39L41.234,470.766z M133.763,441.881l-21.215-21.215l265.249-265.249l21.215,21.215L133.763,441.881z     M369.556,305.953l-21.215,21.215l21.215,21.215l21.215-21.215l28.717,28.717l-21.215,21.215l21.215,21.215l21.215-21.215    l28.717,28.717l-63.645,63.645l-128.58-128.58l63.645-63.645L369.556,305.953z" fill="#c0a062"/></g></g></svg>
+                    <p>Branding &amp; UI Design - <span>PS &amp; Affinity Designer</span></p>
+                    </div>
+                    
+                    
+                    <div class="icon-three">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve" width="512px" height="512px"><g><g>
+                    <path d="M500.563,119.845L265.25,2.189c-5.823-2.911-12.677-2.911-18.499,0L11.437,119.845    C4.43,123.349,0.004,130.51,0.004,138.344c0,7.834,4.426,14.996,11.433,18.499L246.751,274.5c2.912,1.455,6.08,2.183,9.25,2.183    c3.168,0,6.339-0.728,9.249-2.183l235.314-117.657c7.007-3.504,11.433-10.664,11.433-18.499    C511.996,130.51,507.569,123.348,500.563,119.845z M256.001,232.878L66.933,138.344l189.067-94.534l189.067,94.534    L256.001,232.878z" fill="#c0a062"/></g></g><g><g>
+                    <path d="M509.814,364.409c-5.108-10.216-17.533-14.355-27.749-9.25L256.001,468.19L29.936,355.158    c-10.216-5.107-22.64-0.965-27.748,9.25c-5.109,10.217-0.967,22.64,9.249,27.749l235.314,117.657    c2.912,1.455,6.08,2.183,9.25,2.183c3.168,0,6.339-0.728,9.25-2.182l235.314-117.657    C510.781,387.048,514.922,374.625,509.814,364.409z" fill="#c0a062"/></g></g><g><g>
+                    <path d="M509.814,246.751c-5.108-10.216-17.533-14.357-27.749-9.249L256.001,350.534L29.936,237.502    c-10.216-5.108-22.64-0.967-27.748,9.249c-5.109,10.217-0.967,22.64,9.249,27.749l235.314,117.657    c2.912,1.455,6.08,2.183,9.25,2.183c3.168,0,6.339-0.728,9.25-2.183L500.564,274.5    C510.781,269.391,514.922,256.967,509.814,246.751z" fill="#c0a062"/></g></g></svg>
+                    <p>Responsive Design - <span>Desktop, Tablet &amp; Mobile</span></p>
+                    </div>
+                    
+                    
+                </div>
+                
+                </div> -->
+                
+                
+                
+                
+                
+            </div>
+           
+        </div>
+            
+            
+            
+                <!--<div class="row contact-bottom">
+                    
+                <div class="col s12 content center">
+            
+                <div class="box-three">
+                    
+                <h2>Contact me</h2>
+                <div class="underline"></div>
+                    
+                <div class="contact-box">
+                    
+                  <div class="row">
+                    <form class="col s12 form">
+                        
+                      <div class="row">
+                          
+                        <div class="input-field col s6">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Name</label>
+                        </div>
+                        
+                          <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        </div>
+                          
+                      </div>
+
+                          <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">mode_edit</i>
+                                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                  <label for="icon_prefix2">Message</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        
+                    </form>
+                  </div>    
+                    
+                    <a class="waves-effect waves-light btn" type="submit">Submit</a>
+                    
+                  </div> 
+                
+                </div> 
+             </div>
+            </div>-->
+            
+            
+            
+            
+        
+        </div>    
+         
+    </div>
+    </div>
+    <!-- ABOUT ----> 
+    
+    
+
+  <!--<footer class="page-footer">
+      
+    <div class="container">
+      <div class="row">
+          
+        <div class="col s2 logo-bar">
+        <div class="logo-m">
+        <svg width="100%" height="100%" viewBox="0 0 229 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g><rect x="0.461" y="-0.525" width="228.675" height="83.234" style="fill:#c0a062;"/><g transform="matrix(1,0,0,1,-44.5456,-162.774)"><text x="107.119px" y="226.123px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:65px;fill:none;">M</text><text x="107.119px" y="226.123px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:65px;fill:#1d2d3e;">M</text></g><g transform="matrix(1,0,0,1,14.9321,-161.997)"><text x="107.119px" y="226.123px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:65px;fill:none;">S</text><text x="107.119px" y="226.123px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:65px;fill:#1d2d3e;">S</text></g></g></svg>        
+        </div>    
+        </div>
+          
+
+        <div class="col s10 contact-bar">
+        <a href="mailto:mselbekk11@gmail.com" target="_blank" class="smallgap">Email</a>
+        <a href="https://uk.linkedin.com/in/morgan-selbekk-a0617738" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/mselbekk1" target="_blank">Twitter</a>
+        </div>
+          
+      </div>
+    </div>
+
+  </footer>-->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

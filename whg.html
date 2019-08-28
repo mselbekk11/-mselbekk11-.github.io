@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109469051-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109469051-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<script>
+    
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+    
+
+ 
+    
+      $(document).ready(function(){
+      $('.carousel').carousel({dist:0,shift:0,padding:20,});
+          
+     window.setInterval(function(){$('.carousel').carousel('next')},3500)     
+          
+    });  
+    
+ 
+</script>
+    
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    
+    
+  <title>Morgan Selbekk | Web Designer &amp; Developer</title>
+    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="http://www.mselbekk.com/img/browser-icon.jpg" type="image/x-icon" />
+  <!--<link type="text/css" rel="stylesheet" href="component.css">-->
+  <link type="text/css" rel="stylesheet" href="portfolio.css" />
+  <link type="text/css" rel="stylesheet" href="whg.css" /> 
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Asap|Boogaloo|Magra|Overlock|Rambla|Source+Sans+Pro|Viga" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One|Yeseva+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+
+
+    
+</head>
+    
+<body>
+    
+<!-- NAV DESKTOP---->  
+    
+  <nav class="top-bar" role="navigation">
+    <div class="nav-wrapper container" id="menu-center">
+        
+    <div class="tablet-logo"><a href="#" class="plain"><img src="img/ms.png" alt="img04"></a></div>    
+        
+    <ul class="right hide-on-med-and-down">   
+    
+        <!-- ICON ONE -->
+        <li class="logo-m"><a href="#" class="plain"><img src="img/ms.png" alt="img04"></a></li>
+        <!-- ICON ONE --> 
+
+        <li class="normal"><a class="active" href="index.html">Home</a></li>
+        <li class="normal"><a href="index.html#projects">Projects</a></li>
+        <li class="normal"><a href="index.html#about">About</a></li>
+ 
+    </ul>
+    
+        
+        
+    <div class="nav-footer">
+        
+        <!-- ICON TWO --> 
+        <a href="https://twitter.com/mselbekk1" target="blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" width="15px" height="17"><g><g>
+        <path id="iconone" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411    c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513    c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101    c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104    c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194    c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485    c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" fill="#FFFFFF"/></g></g></svg></a>
+        <!-- ICON TWO -->       
+
+
+        <!-- ICON THREE --> 
+        <a href="https://uk.linkedin.com/in/morgan-selbekk-a0617738" target="blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="17px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve"><g>
+        <path id="iconone" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707   c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21   v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824   C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463   c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z    M5.477,420.56h92.184v-277.32H5.477V420.56z" fill="#FFFFFF"/>
+        </g></svg></a>
+        <!-- ICON THREE -->  
+          
+    </div> 
+
+      <ul id="nav-mobile" class="side-nav">
+        <!--<li><a href="#">Navbar Link</a></li>-->
+        <li class="mobile"><a class="active" href="index.html">Home</a></li>
+        <li class="mobile"><a href="index.html#projects">Projects</a></li>
+        <li class="mobile"><a href="index.html#about">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<!-- NAV DESKTOP ----> 
+    
+    
+<!---------------------------------------- WHG ------------------------------------------------------>     
+<div id="whg">
+    
+    
+        
+        <!-- HERO ----> 
+        <section class="hero">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col s12 ">
+
+                        <div class="col s6 left-box">
+                            <h1>Wellington House Group</h1>
+                            <h3>Branding | Web design &amp; Development</h3>
+                            <div class="underline"></div>
+                            <p>I was hired by Wellington House Group who provide tree care and landscaping services. They required a whole brand to be created as well as an online presence. This meant I was responsible for designing a logo, business cards, flyers, website design and development. I chose to build this site in WordPress to utilize various plugins.</p>
+                            <div class="cta"><a href="http://wellingtonhousegroup.com/" target="_blank"><p>Visit Website</p><i class="material-icons">keyboard_arrow_right</i></a></div>
+                        </div>
+                        <div class="col s6 right-box">
+                            <img src="img/WHG-case-study/whg-hero.png">  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+     </section>
+     <!-- HERO ----> 
+        
+        
+        
+     
+    <!-- BRANDING ----> 
+    <section class="branding">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+
+                    <div class="col s6 left-box">
+                        
+                                <div class="flyers">
+                                <div class="flyer-one"><img src="img/WHG-case-study/flyer-front.jpg"></div>
+                                <div class="flyer-two"><img src="img/WHG-case-study/flyer-back-v2.jpg"></div>
+                                </div>
+                        
+                                <div class="business-cards">
+                                <div class="business-card-one"><img src="img/WHG-case-study/WHG-BC-Front-3.jpg"></div>
+                                <div class="business-card-two"><img src="img/WHG-case-study/WHG-BC-Back.jpg"></div>
+                                </div>
+                        
+                    </div>
+                    
+                    <div class="col s6 right-box">
+                        
+                        <h2>Branding</h2>
+                        <div class="underline"></div>
+                        <p>After doing a lot of research on competitor tree care &amp; landscaping companies, I noticed a lot of inconsistencies throughout competitors branding.  Studying BA Media Communications at University, I learnt that it’s imperative your brands identity stays consistent through out all communication channels.</p>
+                        <p>The logo was created in Affinity designer in two color ways. One to sit on the darker backgrounds i.e. dark green and black. The other to sit on lighter shades like white and grey. The font I chose is called Sansita. I liked its italic and friendly nature which I personally think helps the brand look like a premium service.</p>
+                        
+                        <div class="swatch">
+                            <div class="one"><div class="color-one"></div><p>#1E2D2D</p></div>
+                            <div class="two"><div class="color-two"></div><p>#1BB72A</p></div>
+                            <div class="three"><div class="color-three"></div><p>#6F706F</p></div>
+                            <div class="four"><div class="color-four"></div><p>#000</p></div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BRANDING ---->   
+    
+    
+    
+    
+    <!-- FEATURES ----> 
+    <section class="features">
+            <div class="container">
+                
+                
+                <div class="row"> 
+                    <div class="col s12 ">
+
+                        <div class="col s6 left-box">
+                            <h2>Instagram feed</h2>
+                            <div class="underline"></div>
+                            <p>The owner of the company wanted to build a social media presence and thought a good way for him to do this was to upload images and interesting videos of various projects. As he isn’t the most tech savvy person, I added an Instagram feed to his website, so every image he posts on Instagram it automatically feeds to the website.</p>
+                        </div>
+                        <div class="col s6 right-box">
+                            <img src="img/WHG-case-study/project-gallery.jpg">  
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+     </section>
+     <!-- FEATURES ----> 
+    
+    
+    
+    <!-- ICONS ----> 
+    <section class="icons">
+            <div class="container">
+                
+                
+                <div class="row"> 
+                    <div class="col s12 ">
+
+                        <div class="col s6 left-box">
+                            <h2>Icons</h2>
+                            <div class="underline"></div>
+                            <p>I noticed a lot of tree care and landscaping companies just listed their services in plain text. I thought it would be good to visually represent the various services with icons. Not only is it visually more appealing, it will help the reader identify what service they require without having to think too much.</p>
+                        </div>
+                        <div class="col s6 right-box">
+                            <img src="img/WHG-case-study/icons-v2.jpg">  
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+     </section>
+     <!-- ICONS ----> 
+        
+    
+      
+</div>    
+<!---------------------------------------- WHG ------------------------------------------------------>       
+    
+    
+    
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
